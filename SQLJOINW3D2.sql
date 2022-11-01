@@ -65,4 +65,11 @@ From address as ad
 left join customer as cust using(address_id)
 WHERE ad.address LIKE '%e' and cust.customer_id is null;
 
-
+#OPTIONAL----------
+#11 what is the most rented film?
+SELECT title, COUNT(f.film_id) AS 'Count_of_Rented_Movies'
+FROM  film f
+JOIN inventory i using (film_id)
+JOIN rental r using (inventory_id)
+GROUP BY title ORDER BY Count_of_Rented_Movies DESC
+limit 2;
