@@ -1,0 +1,1 @@
+# DSIronLab- This is my personal github and it contains day to day data analytics processes/steps that are required to perform on a daily basis, like data cleaning, data visualisation, machine learning,modelling and some small projects.  
